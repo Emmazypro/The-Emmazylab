@@ -1,0 +1,23 @@
+<section id="contact" class="py-20 bg-[#16161a] text-center text-light">
+    <h2 class="text-3xl font-bold mb-6">Let’s Talk or Collaborate</h2>
+    <p class="mb-6">Want to work with us? Send a message or reach out directly.</p>
+  
+    <form name="contact" method="POST" data-netlify="true" action="thank-you.html" class="max-w-xl mx-auto grid grid-cols-1 gap-4 text-dark">
+      <!-- Required for Netlify to track the form -->
+      <input type="hidden" name="form-name" value="contact">
+  
+      <!-- Input fields with proper name attributes -->
+      <input type="text" name="name" placeholder="Your Name" class="px-4 py-3 rounded" required aria-label="Your Name">
+      <input type="email" name="email" placeholder="Your Email" class="px-4 py-3 rounded" required aria-label="Your Email">
+      <input type="text" name="project" placeholder="Project Type" class="px-4 py-3 rounded" aria-label="Project Type">
+      <textarea name="message" placeholder="Your Message" class="px-4 py-3 rounded" rows="4" aria-label="Your Message"></textarea>
+  
+      <!-- Submit button -->
+      <button type="submit" class="bg-primary text-white px-6 py-3 rounded font-semibold hover:bg-secondary">
+        Send Message
+      </button>
+    </form>
+
+    <!-- Error message (optional) -->
+    <p id="error-message" class="text-red-500 hidden">There was an error submitting the form. Please try again.</p>
+</section>
